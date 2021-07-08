@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+   /* background: url(img1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: column;*/
+   /* background-color:white;*/
+   font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    
+}
+.topnav {
+  overflow: auto;
+  background-color:rgba(0, 0, 0, 0.5);
+  width: 101%;
+  z-index: 100;
+  position: fixed;
+  
+ 
+}
+
+
+section {
+  height:700px;
+  background: url(img1.jpg) no-repeat  ;
+  width: 100%;
+  background-position: center ;
+  background-size:cover;
+  display: inline-block;
+}
+
+h4{
+  
+  margin-left: 100px;
+  
+  }
+.content{
+  height: 300px;
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  width:600px;
+  align-items: center;
+  padding: 15px;
+  margin-top:200px;
+  margin-left: 850px;
+  margin-right:auto;
+  font-family: "Poppins", sans-serif;
+
+}
+.btn button{
+margin-left: auto;
+margin-right: auto;
+text-align :center;
+}
+.heading{
+  font-size: 3.8rem;
+    font-weight: 500;
+    color:white;
+    font-family: "Poppins", sans-serif;
+  text-align: center;}
+
+.body{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    padding: 15px;    
+    color:white;
+    text-align: center;
+
+
+}
+.quotes{
+  background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(img6.jpg) ;
+  background-position: center;
+  background-size: cover;
+  padding:30px;
+  color:white;
+}
+
+blockquote{
+  display: block;
+  position: relative;
+  width:50%;
+  margin: 5rem auto;
+  padding: 0.5rem;
+  font-size: 2rem ;
+  line-height: 1.5rem;
+}
+/*blockquote::after{
+  content:'\201d';
+  top: -20px;
+}*/
+
+
+blockquote::before,
+blockquote::after{
+  font-size: 6rem;
+  position: absolute;
+}
+
+blockquote cite{
+  display: block;
+  position: absolute;
+  font-size: 0.8rem;
+  font-style: normal;
+  line-height: 1.2rem;
+  color: aliceblue;
+  top:120%;
+  padding-left: 70px;
+}
+
+blockquote cite ::after{
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+
+}
+/*.layer{
+  background-color: black;
+  opacity: 50%;
+  width: 100%;
+  height:100%;
+  padding:30px;
+}*/
+section button {
+margin-left: 100px;
+margin-right: 20px;
+padding: 10px;
+border: none;
+background-color: rgb(216, 112, 147);
+color:white;
+font-size: 15px;
+-webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+
+a button{
+  color:white;
+  font-size: 16px;
+}
+a button:hover{
+  color:white;
+  background-color:rgb(207, 91, 131) ;
+}
+
+.heading1{
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  color:#18a4f5;
+  font-family: "Poppins", sans-serif;
+}
+.events{
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom:30px;
+}
+.body2{
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+  justify-content: center;
+  min-height: 20vh;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color:white;
+  
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav a:hover {
+  color: rgb(199, 0, 66);
+}
+.topnav h4:hover {
+  color: white;
+}
+
+.topnav a.active {
+  
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+.main-wrapper{
+    margin: 30px 0;
+}
+
+
+.main-wrapper > h2{
+    text-align: center;
+    margin: 45px 0 25px 0;
+}
+
+.article-collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+article{
+  background-color: white;
+    flex: 0 0 calc(25% - 30px);
+    margin: 10px;
+ /*box-shadow: 0 3rem 6rem rgba(247, 13, 13, 0.1);*/
+ /*box-shadow: 5px 10px;
+ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);*/
+}
+.shiv{
+  background-image: url(img5.jpg);
+}
+.img-box img{
+    width: 100%;
+    display: block;
+    padding: 20px;
+}
+
+.img-box{
+    overflow: hidden;
+}
+
+
+
+.text-content{
+    padding: 0 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.text-content h3{
+    padding: 10px 0px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #0d0d0d;
+  
+}
+
+.text-content p{
+    opacity: 0.8;
+    padding: 10px 0px 25px;
+}
+
+.location{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e8e8e8;
+}
+
+.location div span{
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.location button{
+    /*background: #08c299;*/
+    background-color: #528ff0;
+    color: #fff;
+    border-color: #347ced;
+    padding: 7px 10px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    width: 100px;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.article-collection article:nth-child(even){
+    display: flex;
+    flex-direction: column;
+}
+
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom:20px;
+  background: rgb(255, 7, 110);
+}
+.card-stats .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card-stats .border {
+  border-left: 1px solid rgb(172, 26, 87);
+  border-right: 1px solid rgb(172, 26, 87);
+}
+.card-stats .value{
+  font-size:22px;
+  font-weight: 500;
+}
+.card-stats .value sup{
+  font-size:12px;
+}
+.card-stats .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-stats0 {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 20px;
+  background:  rgb(25, 176, 227);
+}
+.card-stats0 .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card-stats0 .border {
+  border-left: 1px solid rgb(41, 170, 214);
+  border-right: 1px solid rgb(41, 170, 214);
+}
+.card-stats0 .value{
+  font-size:22px;
+  font-weight: 500;
+}
+.card-stats0 .value sup{
+  font-size:12px;
+}
+.card-stats0 .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-stats1 {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 20px;
+  background: rgb(255, 77, 7);
+}
+.card-stats1 .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card-stats1 .border {
+  border-left: 1px solid rgb(185, 67, 20);
+  border-right: 1px solid rgb(185, 67, 20);
+}
+.card-stats1 .value{
+  font-size:22px;
+  font-weight: 500;
+}
+.card-stats1 .value sup{
+  font-size:12px;
+}
+.card-stats1 .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-stats2 {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 20px;
+  background:  rgb(0, 189, 63);
+}
+.card-stats2 .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card-stats2 .border {
+  border-left: 1px solid rgb(14, 122, 50);
+  border-right: 1px solid rgb(14, 122, 50);
+}
+.card-stats2 .value{
+  font-size:22px;
+  font-weight: 500;
+}
+.card-stats2 .value sup{
+  font-size:12px;
+}
+.card-stats2 .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+article:hover {
+    transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+footer {
+  margin-top: 50px;
+  padding: 50px;
+  background: #3495bf;
+  background: -moz-linear-gradient(left,  #3495bf 0%, #6085b2 100%);
+  background: -webkit-linear-gradient(left, #3495bf 0%,#6085b2 100%);
+  background: linear-gradient(to right, #3495bf 0%,#6085b2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2749c4', endColorstr='#6085b2',GradientType=1 );
+  color:#fff;
+  position:relative;
+}
+.main {
+  width: 1300px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: left;
+}
+.single-footer {
+  width: 330px;
+}
+.single-footer:first-child {
+  width: 400px;
+}
+.single-footer h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-bottom: 20px;
+ 
+}
+.footer-social a {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  align-items: left;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.footer-social {
+  margin-top: 20px;
+  align-items: center;
+}
+.single-footer ul {
+  list-style: none;
+}
+.single-footer ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+.single-footer ul li a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.single-footer ul li a i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.single-footer a:hover{
+ font-size: 17px;
+}
+.copy {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+.footer-wave-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  right: 0;
+  width: 100%;
+  overflow:hidden;
+}
+.footer-wave {
+  background-image: url('footer-shape.png');
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200%;
+  background-size:50%;
+  background-position:bottom;
+  background-repeat:repeat-x;
+}
+
+.wrapper1 {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.slider {
+  width: 1000px;
+  height: 100px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+  display: flex;
+  overflow: hidden;
+}
+.slide {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 8s linear infinite;
+}
+.slide img {
+  height: 70px;
+  padding: 0 30px 0 30px;
+}
+@keyframes slideshow {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+.slider::before, .slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right:0;
+  top:0;
+  transform: rotateZ(180deg);
+}
+@media only screen and (max-width:600px){
+  .main{
+    width:320px;
+  }
+  .footer-wave-box {
+    display: none;
+  }
+  .single-footer:first-child, .single-footer {
+    width: 100%;
+    margin-bottom:30px;
+  }
+  .topnav{
+    position:relative;
+    
+  }
+}
+@media screen and (max-width: 1200px){
+    article{
+        flex: 0 0 calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    article{
+        flex: 0 0 100%;
+    }
+
+    .article-collection article:nth-child(even){
+        flex-direction: column;
+    }
+} 
+
+ @media screen and (min-width:1200px){
+    section{
+      width:100%;
+    }
+  }
+  @media screen and (min-width:1024px) and (max-width:1300px ){
+    .topnav h4{
+      margin-left: 0px;
+      margin-right: 20px;
+    }
+    .topnav button{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    
+  }
+  @media screen and (max-width:1440px) { 
+    
+    .topnav button{
+       margin-left:15px;
+  }
+  h4{
+    margin-right: 40px;
+  }
+
+}
+@media  screen and (min-width:1440px)and (max-width:2000px) {
+  section,.events{
+      max-width: 100%;
+  }
+  
+  
+  
+}
+
+@media screen and (max-width: 1204px){
+  .content{
+    width: auto;
+    height: 300px;
+    position: relative;
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 15px;
+    margin-top:300px;
+    margin-left: auto;
+    margin-right:auto;
+    
+  }
+  .quotes{
+    padding: 10px;
+    min-height: 60vh
+  }
+  .layer
+  {
+    min-height:60vh;
+  }
+}
+@media screen and (max-width: 800px) and (max-width: 1204px ) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin-right: 50px;
+  }
+  
+  .topnav button{
+       margin-left: auto;
+  }
+ }
+}
+
+@media screen and (max-width: 600px){
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .body2{
+    padding: auto;
+    margin: auto;
+  }
+  .body{
+    padding:auto;
+  }
+  
+  body{
+    font-size:12px;
+  }
+ 
+}
+@media screen and (max-width: 800px){
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    padding-left: 40px;
+   /* padding: 12px;*/
+
+  }
+
+  .heading{
+    font-size: 2rem;
+
+  }
+  .body{
+    font-size: 1rem;
+    padding: auto;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+  }
+}
+@media screen and (mix-width: 1000px){
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    
+  }
+}
+@media only screen and (max-width:600px){
+  .main{
+    width:320px;
+  }
+  .footer-wave-box {
+    display: none;
+  }
+  .single-footer:first-child, .single-footer {
+    width: 100%;
+    margin-bottom:30px;
+  }
+  .body2{
+    font-size: 14px;
+    
+  }
+  h4{
+    text-align: left;
+    margin-right: 0px;
+    padding: auto;
+    color:white;
+    font-size: 15px;
+    margin-left: 30px;
+  }
+}
+ 
+@media only screen and (max-width:1200px){
+  .main{
+    width:320px;
+  }
+  .footer-wave-box {
+    display: none;
+  }
+  .single-footer:first-child, .single-footer {
+    width: 100%;
+    margin-bottom:30px;
+  }
+  .topnav a{
+    font-size:15px;
+    margin-left: 5px;
+  }
+ 
+  section button{
+    margin-left:10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  .single-footer h4{
+    margin-left: 20px;
+  }}
+</style>
+</head>
+<body>
+<div class ="background" id="background">
+<section id="s1">
+<div class="topnav" id="myTopnav">
+  <a target="_self" href="#s1.html"><h4>Educational Society</h4></a>
+ <a target="_self" href="#s1">Home</a>
+  <a target="_self" href="#s2">About Us</a>
+  <a target="_self" href="#s3">Latest Events</a>
+  <a target="_self" href="#s4">Upcoming Events</a>  
+  <a target="_self" href="#s5">Contact Us</a>
+  <a target="_self" href="https://docs.google.com/forms/d/e/1FAIpQLSfjD97eKXdVGXN4Hy-FpTk2asuUuUHG63YlqIiQVUxZvg5tcA/viewform?usp=sf_link" ><button>Become a Volunteer</button></a>
+
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class ="content" >
+  <div class="heading">JOIN US</div>
+  <div class="body">Children need champions.Get involved, speak out, volunteer or become a donor and give every child<br> a fair chance to succeed.</div>
+  
+  <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HWLdKau3agevjl" async> </script> </form>
+</div>
+
+</section>
+
+<div class="aboutus" id="s2" >
+  <div class="heading1">About Us </div>
+  <div class="body2">We are a Non-governmental organization for welfare in the education field. We support the most 
+    vulnerable children to access their right to education through innovative ideas such as forming student groups and child-tracking systems,
+     holding awareness workshops with parents to ensure that they send children to school. We also provides placement & apprenticeship
+      opportunities to ITI, BTech, and diploma students for their bright future.</div>
+</div>
+
+
+<div class="events" id="s3">
+  <!--<div class="heading1">Events</div>-->
+  <div class = "main-wrapper">
+   <div class="heading1">Latest Events </div>
+
+    <div class = "article-collection">
+        <!-- article single -->
+        <article>
+            <div class = "img-box">
+                <img src = "img2.jpg" alt = "">
+            </div>
+
+            <div class = "text-content">
+                <h3>Event  1</h3>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                                </p>
+
+                <!--<div class = "location">
+                    <div>
+                        <span><i class = "fas fa-map"></i></span>
+                        <span>San Franciso, CA</span>
+                    </div>
+                    <button type = "button">Read</button>
+                </div>-->
+                <div class="card-stats">
+                  <div class="stat">
+                    <div class="value">200</div>
+                    <div class="type">students</div>
+                  </div>
+                  <div class="stat border">
+                    <div class="value">20</div>
+                    <div class="type">volunteer</div>
+                  </div>
+                  <div class="stat">
+                    <div class="value">5</div>
+                    <div class="type">donations</div>
+                  </div>
+                </div>
+            </div>
+        </article>
+        <article>
+          <div class = "img-box">
+              <img src = "img3.jpg" alt = "">
+          </div>
+
+          <div class = "text-content">
+              <h3>Event 2</h3>
+              <div class = "rating">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+
+              <!--<div class = "location">
+                  <div>
+                      <span><i class = "fas fa-map"></i></span>
+                      <span>San Franciso, CA</span>
+                  </div>
+                  <button type = "button">Read</button>
+              </div>-->
+              <div class="card-stats0">
+                <div class="stat">
+                  <div class="value">80</div>
+                  <div class="type">students</div>
+                </div>
+                <div class="stat border">
+                  <div class="value">10</div>
+                  <div class="type">volunteers</div>
+                </div>
+                <div class="stat">
+                  <div class="value">3</div>
+                  <div class="type">donations</div>
+                </div>
+              </div>
+          </div>
+      </article>
+      <article>
+        <div class = "img-box">
+            <img src = "img4.jpg" alt = "">
+        </div>
+
+        <div class = "text-content">
+            <h3> Event 3</h3>
+            <div class = "rating">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+
+            <!--<div class = "location">
+                <div>
+                    <span><i class = "fas fa-map"></i></span>
+                    <span>San Franciso, CA</span>
+                </div>
+                <button type = "button">Read</button>
+            </div>-->
+            <div class="card-stats1">
+              <div class="stat">
+                <div class="value">350</div>
+                <div class="type">students</div>
+              </div>
+              <div class="stat border">
+                <div class="value">25</div>
+                <div class="type">volunteer</div>
+              </div>
+              <div class="stat">
+                <div class="value">7</div>
+                <div class="type">donations</div>
+              </div>
+            </div>
+        </div>
+    </article>
+    <article>
+      <div class = "img-box">
+          <img src = "img5.jpg" alt = "">
+      </div>
+
+      <div class = "text-content">
+          <h3>Event 4</h3>
+          <div class = "rating">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <!--<div class = "location">
+              <div>
+                  <span><i class = "fas fa-map"></i></span>
+                  <span>San Franciso, CA</span>
+              </div>
+              <button type = "button">Read</button>
+          </div>-->
+          <div class="card-stats2">
+            <div class="stat">
+              <div class="value">200</div>
+              <div class="type">students</div>
+            </div>
+            <div class="stat border">
+              <div class="value">20</div>
+              <div class="type">volunteer</div>
+            </div>
+            <div class="stat">
+              <div class="value">5</div>
+              <div class="type">donations</div>
+            </div>
+          </div>
+      </div>
+  </article>
+  </div>
+  </div>
+  </div>
+  <div class="quotes">
+    <div class="layer">
+          <blockquote>
+            “Education is the most powerful weapon which 
+            you can use to change the world.”
+            <cite>
+              Nelson Mandela<br>
+              <em>Former President of South Africa</em><br>
+            </cite>
+          </blockquote>
+      </div>
+  </div>
+  <div class="events" id="s4">
+    <div class = "main-wrapper">
+     <div class="heading1">Upcoming Events</div>
+
+      <div class = "article-collection">
+          <!-- article single -->
+          <article>
+              <div class = "img-box">
+                  <img src = "img7.jpg" alt = "">
+              </div>
+
+              <div class = "text-content">
+                  <h3>Cause 1</h3>
+
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero.</p>
+
+                    
+                 <div class = "text-content">
+                  <span><i class = "fas fa-map"></i></span>
+                  <span>Mumbai, India</span>
+              </div>
+      <div class="location">
+              <!--<button type="button ">Donate</button>-->
+              <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HWLs0BVrtPlWYC" async> </script> </form>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUZuGIENXc62cV08enV2CDxeJu7nP5_m58zjYxUjTTCCcfrA/viewform?usp=sf_link"><button type = "button">Volunteer</button></a>
+          </div>
+              </div>
+          </article>
+          <!-- end of article single -->
+
+          <!-- article single -->
+          <article>
+              <div class = "img-box">
+                  <img src = "img8.jpg" alt = "">
+              </div>
+
+              <div class = "text-content">
+                  <h3>Cause 2</h3>                
+
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero.</p>
+
+                    
+                 <div class = "text-content">
+                  <span><i class = "fas fa-map"></i></span>
+                  <span>Delhi, India</span>
+              </div>
+      <div class="location">
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HWLs0BVrtPlWYC" async> </script> </form>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScdJ7saOVpszS6euJJUhgLgbRnMKF-OCih0FNdfgvMCYcLY_Q/viewform?usp=sf_link"><button type = "button">Volunteer</button></a>
+          </div>
+              </div>
+          </article>
+          <!-- end of article single -->
+          <!-- article single -->
+          <article>
+              <div class = "img-box">
+                  <img src = "img9.jpg" alt = "">
+              </div>
+
+              <div class = "text-content">
+                  <h3>Cause 3</h3>
+                  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero.</p>
+                  
+                 <div class = "text-content">
+                          <span><i class = "fas fa-map"></i></span>
+                          <span>Chennai, India</span>
+                      </div>
+              <div class="location">
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HWLs0BVrtPlWYC" async> </script> </form>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv-uxp2e4hA1WiJmwgW9VhclbW-aLBm8rzNcH4aPsbPr6zoQ/viewform?usp=sf_link"><button type = "button">Volunteer</button></a>
+                  </div>
+              </div>
+          </article>
+          <!-- end of article single -->
+
+          <!-- article single -->
+          
+      </div>
+  </div>
+  </div>
+  <div class="heading1">Our Partners </div>
+<div class="wrapper1">
+    <div class="slider">
+      <div class="slide">
+        <img src="images/adidas.png" />
+        <img src="images/facebook.png" />
+        <img src="images/google.png" />
+        <img src="images/instagram.png" />
+        <img src="images/nike.png" />
+        <img src="images/twitter.png" />
+        <img src="images/uber.png" />
+      </div>
+      <div class="slide">
+        <img src="images/adidas.png" />
+        <img src="images/facebook.png" />
+        <img src="images/google.png" />
+        <img src="images/instagram.png" />
+        <img src="images/nike.png" />
+        <img src="images/twitter.png" />
+        <img src="images/uber.png" />
+      </div>
+    </div>
+</div>
+
+
+<footer>
+      <div class="main" id="s5">
+        <div class="footer">
+            <div class="single-footer">
+                <h4 style="margin-left: 0px;">about us</h4>
+                <p>Lorem ipsum dolor sit amet, di dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint qui officia deserunt Excepteur.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="single-footer">
+                <h4 style="margin-left: 0px;">main menu</h4>
+                <ul>
+                    <li><a href="#s1"><i class="fas fa-chevron-right"></i> home</a></li>
+                    <li><a href="#s2"><i class="fas fa-chevron-right"></i> about us</a></li>
+                    <li><a href="#s3"><i class="fas fa-chevron-right"></i> latest events</a></li>
+                    <li><a href="#s4"><i class="fas fa-chevron-right"></i> upcoming events</a></li>
+                    <li><a href="#s5"><i class="fas fa-chevron-right"></i> contact us</a></li>
+                </ul>
+            </div>
+            <div class="single-footer">
+                <h4 style="margin-left: 0px;">contact us</h4>
+                <ul>
+                    <li><a href=""><i class="fas fa-map-marker-alt"></i> no,street,area,state,country</a></li>
+                    <li><a href=""><i class="fas fa-mobile-alt"></i> +91 0123 456 789</a></li>
+                    <li><a href=""><i class="far fa-envelope"></i> info@demo.com</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2021 all rights reserved</p>
+        </div>
+    </div>
+</footer>
+  
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+</body>
+</html>
